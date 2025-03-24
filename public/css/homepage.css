@@ -1,0 +1,46 @@
+@font-face { font-family: MAINFONT; src: url('/fonts/chinese_rocks_rg.ttf'); }
+
+body {
+    font-family: 'MAINFONT', serif;
+    color: white;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('/images/home.jpg');
+
+    /* Full height */
+    height: 600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        height: 400px;
+        background-attachment: scroll;
+    }
+}
+
+.greet {
+    text-align: center;
+}
+
+/* Slider */
+.sliderImage {
+    width: 100%;
+    cursor: pointer;
+}
+
+#expandedImg {
+    height: 100%;
+}
+
+.donate {
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+@font-face { font-family: MAINFONT; src: url('/fonts/chinese_rocks_rg.ttf'); }
+
+.nav-link {
+    font-size: 22px;
+    font-family: 'MAINFONT', serif;
+}
+
+.dropdown-menu a {
+    color: #909294;
+}
+
+.dropdown-menu :hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+hr {
+    border-top: 4px double white;
+    width: 600px;
+    margin-top: 10px;
+}

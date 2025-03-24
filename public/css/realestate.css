@@ -1,0 +1,30 @@
+.listing {
+    color: white;
+
+}
+
+.listing .card-body {
+    padding: 0;
+}
+
+.listing-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+}
+
+.sold {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    width: 40%;
+}
+
+.soldBig {
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    width: 40%;
+}

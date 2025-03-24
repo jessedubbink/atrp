@@ -1,0 +1,18 @@
+.main-rules {
+    font-size: 22px;
+    color: rgb(169, 169, 169);
+}
+
+.redm-rules {
+    font-size: 22px;
+    color: white;
+    background-color: rgb(165, 1, 8);
+}
+
+.rules {
+    list-style: none;
+}
+
+.rules li {
+    margin-bottom: 10px;
+}

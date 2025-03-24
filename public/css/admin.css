@@ -1,0 +1,149 @@
+#app {
+    padding: 0;
+}
+
+.menuToggle {
+	width: 3.2rem;
+	height: 3.2rem;
+	line-height: 3.2rem;
+	font-size: 1.4rem;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    
+    -webkit-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.menuToggle :hover {
+    color: red !important;
+	text-decoration: none;
+}
+
+.collapsing {
+    margin: 0;
+    padding: 0;
+}
+
+/* .collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+} */
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    
+    width: 300px;
+    height: 100vh;
+
+    text-align: center;
+
+    -webkit-animation: slide 0.3s forwards;
+    animation: slide 0.3s forwards;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+.sidebar-nav {
+    width: 220px;
+    margin: 50px 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1000;
+    text-align: left;
+}
+
+.sidebar-nav li {
+    position: relative; 
+    line-height: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.sidebar-nav li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 3px;
+    background-color: red;
+    -webkit-transition: width .1s ease-in;
+    -moz-transition:  width .1s ease-in;
+    -ms-transition:  width .1s ease-in;
+    transition: width .1s ease-in;
+}
+
+.sidebar-nav li:hover:before,
+.sidebar-nav li.open:hover:before {
+    width: 5px;
+    -webkit-transition: width .1s ease-in;
+    -moz-transition:  width .1s ease-in;
+    -ms-transition:  width .1s ease-in;
+    transition: width .1s ease-in;
+}
+
+.sidebar-nav .active:before {
+    width: 5px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px 15px 10px 30px;    
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:hover,
+.sidebar-nav li.open a:active,
+.sidebar-nav li.open a:focus{
+    color: #fff;
+    text-decoration: none;
+}
+
+hr {
+    border-top: 1px solid white;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.update :hover {
+    background-color: #212529;
+}
+
+.update hr {
+    width: 200px;
+}
+
+.btn-info {
+    color: white;
+}
+
+.btn-group {
+    float: left;
+}
